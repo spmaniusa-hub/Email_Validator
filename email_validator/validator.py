@@ -8,6 +8,8 @@ sanitization, and database availability lookups.
 Author: Mani Subramanian
 """
 
+from __future__ import annotations
+
 import re
 from typing import Any, Optional, Tuple
 

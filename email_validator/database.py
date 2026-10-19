@@ -8,6 +8,8 @@ Implements the Repository Pattern to decouple storage from validation logic.
 Author: Mani Subramanian
 """
 
+from __future__ import annotations
+
 import sqlite3
 from typing import Protocol, Sequence, Optional
 from contextlib import contextmanager

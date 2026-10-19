@@ -6,6 +6,8 @@ Data models and status enumerations for email validation results.
 Author: Mani Subramanian
 """
 
+from __future__ import annotations
+
 from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
@@ -19,7 +21,7 @@ class ValidationStatus(str, Enum):
     INVALID_INPUT = "INVALID_INPUT"
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class ValidationResult:
     """
     Immutable representation of an email validation outcome.
